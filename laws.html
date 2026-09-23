@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Six Laws | Grand Marshal of War</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.archive-page {
+    max-width: 1200px;
+    margin: auto;
+    padding: 140px 5% 100px;
+}
+
+.page-title {
+    font-family: Cinzel, serif;
+    font-size: clamp(45px, 8vw, 80px);
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.page-description {
+    max-width: 800px;
+    color: #a7a197;
+    font-size: 16px;
+    margin-bottom: 70px;
+}
+
+.law-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+}
+
+.law {
+
+    position: relative;
+
+    min-height: 340px;
+
+    padding: 40px;
+
+    background: #131313;
+
+    border: 1px solid rgba(200,164,93,.15);
+
+    transition: .35s;
+
+}
+
+.law:hover {
+
+    background: #191919;
+
+    border-color: #c8a45d;
+
+    transform: translateY(-5px);
+
+}
+
+.law-number {
+
+    color: #c8a45d;
+
+    font-family: Cinzel, serif;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+}
+
+.law h2 {
+
+    margin-top: 20px;
+
+    font-size: 31px;
+
+}
+
+.law-role {
+
+    color: #c8a45d;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    margin-top: 8px;
+
+}
+
+.law p {
+
+    color: #a7a197;
+
+    font-size: 14px;
+
+    margin-top: 25px;
+
+}
+
+.law-principle {
+
+    position: absolute;
+
+    bottom: 35px;
+
+    left: 40px;
+
+    right: 40px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid rgba(200,164,93,.15);
+
+    color: #ddd4c5;
+
+    font-family: Cinzel, serif;
+
+    font-size: 12px;
+
+    font-style: italic;
+
+}
+
+.system-note {
+
+    margin-top: 70px;
+
+    padding: 35px;
+
+    background: #0d0d0d;
+
+    border: 1px solid rgba(200,164,93,.2);
+
+}
+
+.system-note h2 {
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+
+}
+
+.system-note p {
+
+    color: #a7a197;
+
+    font-size: 14px;
+
+    max-width: 850px;
+
+}
+
+@media(max-width:800px) {
+
+    .law-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .law {
+
+        min-height: 320px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+
+        <span class="logo-small">
+            THE ARCHIVE OF
+        </span>
+
+        GRAND MARSHAL
+
+        <span class="logo-small">
+            OF WAR
+        </span>
+
+    </div>
+
+    <button class="menu-button" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <nav id="navMenu">
+
+        <a href="index.html">Home</a>
+        <a href="characters.html">Characters</a>
+        <a href="locations.html">World</a>
+        <a href="factions.html">Factions</a>
+        <a href="laws.html">Cosmology</a>
+        <a href="timeline.html">Timeline</a>
+
+    </nav>
+
+</header>
+
+
+<main class="archive-page">
+
+
+    <p class="section-label">
+        THE FOUNDATION OF EXISTENCE
+    </p>
+
+    <h1 class="page-title">
+        The Six Laws
+    </h1>
+
+    <p class="page-description">
+
+        The Six Laws are fundamental principles of existence.
+
+        They are distinct from divine concepts and Authorities.
+        A concept such as War or Death may be possessed,
+        embodied, or exercised by divine beings without
+        necessarily being one of the Six Laws.
+
+    </p>
+
+
+    <div class="law-grid">
+
+
+        <!-- LAW 1 -->
+
+        <article class="law">
+
+            <span class="law-number">
+                LAW I
+            </span>
+
+            <h2>
+                Creation
+            </h2>
+
+            <div class="law-role">
+                THE ORIGIN
+            </div>
+
+            <p>
+
+                The Law of Creation concerns the emergence
+                of existence itself.
+
+                It governs the fundamental transition by which
+                something comes into being rather than remaining
+                absent.
+
+            </p>
+
+            <div class="law-principle">
+                The principle of beginning.
+            </div>
+
+        </article>
+
+
+        <!-- LAW 2 -->
+
+        <article class="law">
+
+            <span class="law-number">
+                LAW II
+            </span>
+
+            <h2>
+                Causality
+            </h2>
+
+            <div class="law-role">
+                THE WEAVER
+            </div>
+
+            <p>
+
+                The Law of Causality governs the relationship
+                between events, actions, conditions, and
+                consequences.
+
+                It establishes that occurrences do not exist
+                independently from the chains that connect them.
+
+            </p>
+
+            <div class="law-principle">
+                Every effect belongs to a chain of cause.
+            </div>
+
+        </article>
+
+
+        <!-- LAW 3 -->
+
+        <article class="law">
+
+            <span class="law-number">
+                LAW III
+            </span>
+
+            <h2>
+                Ending
+            </h2>
+
+            <div class="law-role">
+                THE LAST WITNESS
+            </div>
+
+            <p>
+
+                The Law of Ending governs conclusion,
+                departure, and the eventual cessation
+                of things that have begun.
+
+                It represents the principle that existence
+                does not remain indefinitely unchanged.
+
+            </p>
+
+            <div class="law-principle">
+                All that begins possesses an ending.
+            </div>
+
+        </article>
+
+
+        <!-- LAW 4 -->
+
+        <article class="law">
+
+            <span class="law-number">
+                LAW IV
+            </span>
+
+            <h2>
+                Actuality
+            </h2>
+
+            <div class="law-role">
+                THE IMMUTABLE
+            </div>
+
+            <p>
+
+                The Law of Actuality concerns what truly is.
+
+                It distinguishes existence and actuality
+                from possibility, illusion, interpretation,
+                or unrealized potential.
+
+            </p>
+
+            <div class="law-principle">
+                What is, is.
+            </div>
+
+        </article>
+
+
+        <!-- LAW 5 -->
+
+        <article class="law">
+
+            <span class="law-number">
+                LAW V
+            </span>
+
+            <h2>
+                Convergence
+            </h2>
+
+            <div class="law-role">
+                THE CONVERGENT
+            </div>
+
+            <p>
+
+                The Law of Convergence governs the meeting
+                and intersection of separate paths.
+
+                Different causes, beings, events, and histories
+                may move independently before eventually
+                reaching a common point.
+
+            </p>
+
+            <div class="law-principle">
+                Separate paths may converge.
+            </div>
+
+        </article>
+
+
+        <!-- LAW 6 -->
+
+        <article class="law">
+
+            <span class="law-number">
+                LAW VI
+            </span>
+
+            <h2>
+                Conception
+            </h2>
+
+            <div class="law-role">
+                THE UNFORMED
+            </div>
+
+            <p>
+
+                The Law of Conception concerns the formation
+                of possibilities before they become fully
+                established within actuality.
+
+                Its deeper nature remains part of the
+                developing cosmological archive.
+
+            </p>
+
+            <div class="law-principle">
+                Possibility precedes manifestation.
+            </div>
+
+        </article>
+
+
+    </div>
+
+
+    <section class="system-note">
+
+        <h2>
+            The Law Embodiment Principle
+        </h2>
+
+        <p>
+
+            A Law is conserved through its embodiment.
+
+            A Law that already possesses an active embodiment
+            cannot simply be embodied by another being at the
+            same time.
+
+            When its bearer dies, the Law becomes vacant.
+
+            Even beings capable of reaching the highest
+            known levels of divine development cannot simply
+            embody an occupied Law.
+
+        </p>
+
+    </section>
+
+
+    <section class="system-note">
+
+        <h2>
+            Laws and Divine Authorities
+        </h2>
+
+        <p>
+
+            The Six Laws should not be confused with divine
+            concepts or Authorities.
+
+            War, Death, Dreams, and similar concepts can exist
+            as divine powers without replacing the Six Laws.
+
+            The distinction between a Law, a concept, an Authority,
+            and a divine domain is fundamental to the cosmology.
+
+        </p>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <div class="footer-logo">
+        GRAND MARSHAL OF WAR
+    </div>
+
+    <p>
+        The Cosmological Archive
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
