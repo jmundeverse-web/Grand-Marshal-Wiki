@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Timeline | Grand Marshal of War</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.archive-page {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 140px 5% 100px;
+
+}
+
+.page-title {
+
+    font-family: Cinzel, serif;
+
+    font-size: clamp(45px, 8vw, 80px);
+
+    line-height: 1;
+
+    margin-bottom: 25px;
+
+}
+
+.page-description {
+
+    max-width: 750px;
+
+    color: #a7a197;
+
+    font-size: 16px;
+
+    margin-bottom: 80px;
+
+}
+
+
+/* TIMELINE */
+
+.timeline {
+
+    position: relative;
+
+    margin-left: 25px;
+
+    padding-left: 45px;
+
+    border-left: 1px solid rgba(200,164,93,.35);
+
+}
+
+
+.timeline-event {
+
+    position: relative;
+
+    margin-bottom: 70px;
+
+}
+
+
+.timeline-event::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: -52px;
+
+    top: 5px;
+
+    width: 13px;
+
+    height: 13px;
+
+    background: #0b0b0b;
+
+    border: 2px solid #c8a45d;
+
+    transform: rotate(45deg);
+
+}
+
+
+.timeline-era {
+
+    color: #c8a45d;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.timeline-event h2 {
+
+    font-size: 28px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.timeline-event p {
+
+    color: #a7a197;
+
+    font-size: 14px;
+
+    max-width: 700px;
+
+}
+
+
+.timeline-status {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 5px 10px;
+
+    border: 1px solid rgba(200,164,93,.2);
+
+    color: #888;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.timeline-note {
+
+    padding: 30px;
+
+    margin-top: 80px;
+
+    background: #101010;
+
+    border-left: 2px solid #c8a45d;
+
+    color: #999;
+
+    font-size: 13px;
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+
+        <span class="logo-small">
+            THE ARCHIVE OF
+        </span>
+
+        GRAND MARSHAL
+
+        <span class="logo-small">
+            OF WAR
+        </span>
+
+    </div>
+
+    <button class="menu-button" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <nav id="navMenu">
+
+        <a href="index.html">Home</a>
+        <a href="characters.html">Characters</a>
+        <a href="locations.html">World</a>
+        <a href="factions.html">Factions</a>
+        <a href="laws.html">Cosmology</a>
+        <a href="timeline.html">Timeline</a>
+
+    </nav>
+
+</header>
+
+
+<main class="archive-page">
+
+
+    <p class="section-label">
+        HISTORY
+    </p>
+
+    <h1 class="page-title">
+        Timeline
+    </h1>
+
+    <p class="page-description">
+
+        A record of the known history of the world.
+
+        Where exact dates have not yet been established,
+        events are presented according to their confirmed
+        chronological relationship rather than assigning
+        invented dates.
+
+    </p>
+
+
+    <div class="timeline">
+
+
+        <!-- ANCIENT -->
+
+        <article class="timeline-event">
+
+            <div class="timeline-era">
+                ANCIENT HISTORY
+            </div>
+
+            <h2>
+                The First Children
+            </h2>
+
+            <p>
+
+                The First Children belong to the ancient history
+                of the setting.
+
+                Their existence forms part of the earliest known
+                historical framework before later civilizations
+                and catastrophes.
+
+            </p>
+
+            <span class="timeline-status">
+                CONFIRMED EVENT
+            </span>
+
+        </article>
+
+
+        <!-- LOST CHILD -->
+
+        <article class="timeline-event">
+
+            <div class="timeline-era">
+                ANCIENT HISTORY
+            </div>
+
+            <h2>
+                The Lost Child
+            </h2>
+
+            <p>
+
+                The Lost Child is an established event or figure
+                within the ancient history of the setting.
+
+                The complete circumstances surrounding this
+                occurrence remain part of the developing lore.
+
+            </p>
+
+            <span class="timeline-status">
+                CONFIRMED — DETAILS DEVELOPING
+            </span>
+
+        </article>
+
+
+        <!-- FIRST APOCALYPSE -->
+
+        <article class="timeline-event">
+
+            <div class="timeline-era">
+                ANCIENT HISTORY
+            </div>
+
+            <h2>
+                The First Apocalypse
+            </h2>
+
+            <p>
+
+                A major ancient catastrophe that forms one of
+                the defining events in the history of the world.
+
+                Earth existed during this period.
+
+            </p>
+
+            <span class="timeline-status">
+                MAJOR HISTORICAL EVENT
+            </span>
+
+        </article>
+
+
+        <!-- EARTH -->
+
+        <article class="timeline-event">
+
+            <div class="timeline-era">
+                BILLIONS OF YEARS AGO
+            </div>
+
+            <h2>
+                The Herald's Blood Reaches Earth
+            </h2>
+
+            <p>
+
+                The Herald of Slumber's blood fell upon Earth
+                billions of years ago.
+
+                This event would eventually become connected
+                to Alex's existence and his unusual relationship
+                with war.
+
+            </p>
+
+            <span class="timeline-status">
+                CONFIRMED
+            </span>
+
+        </article>
+
+
+        <!-- ALEX -->
+
+        <article class="timeline-event">
+
+            <div class="timeline-era">
+                LATER HISTORY
+            </div>
+
+            <h2>
+                Alex's Soul Is Drawn Into the Calling
+            </h2>
+
+            <p>
+
+                Alex's soul becomes caught within the later
+                calling of the Herald.
+
+                His circumstances eventually lead to his
+                arrival within his current mother's unborn child.
+
+            </p>
+
+            <span class="timeline-status">
+                CONFIRMED
+            </span>
+
+        </article>
+
+
+        <!-- HANZO -->
+
+        <article class="timeline-event">
+
+            <div class="timeline-era">
+                LATER HISTORY
+            </div>
+
+            <h2>
+                Hanzo's Arrival
+            </h2>
+
+            <p>
+
+                Hanzo's consciousness enters the body of a child
+                who had already died after being drowned by his
+                peers.
+
+                Hanzo is the chosen name he adopts for his new life.
+
+                He is not the author of Grand Marshal of War,
+                and his existence does not grant him knowledge
+                of events simply because they occur within the
+                novel's setting.
+
+            </p>
+
+            <span class="timeline-status">
+                CONFIRMED
+            </span>
+
+        </article>
+
+
+        <!-- PROLOGUE -->
+
+        <article class="timeline-event">
+
+            <div class="timeline-era">
+                PROLOGUE
+            </div>
+
+            <h2>
+                The Calling
+            </h2>
+
+            <p>
+
+                The Herald notices Alex when Alex blows the
+                war horn.
+
+                The Herald subsequently calls Hanzo.
+
+                This connects the two protagonists to a larger
+                chain of events involving the Herald and his
+                Avatar.
+
+            </p>
+
+            <span class="timeline-status">
+                CONFIRMED
+            </span>
+
+        </article>
+
+
+        <!-- CURRENT -->
+
+        <article class="timeline-event">
+
+            <div class="timeline-era">
+                CURRENT AGE
+            </div>
+
+            <h2>
+                The Beginning of the Recorded Story
+            </h2>
+
+            <p>
+
+                The events of the main narrative begin.
+
+                Alex and Hanzo enter a world whose history
+                extends far beyond their own lives.
+
+                The consequences of ancient events continue
+                to influence the present.
+
+            </p>
+
+            <span class="timeline-status">
+                MAIN STORY
+            </span>
+
+        </article>
+
+
+    </div>
+
+
+    <div class="timeline-note">
+
+        <strong>CHRONOLOGICAL ARCHIVE</strong><br><br>
+
+        Exact dates will be added when the chronology is finalized.
+
+        The archive intentionally avoids creating artificial
+        dates for events whose exact placement has not yet been
+        established.
+
+    </div>
+
+
+</main>
+
+
+<footer>
+
+    <div class="footer-logo">
+        GRAND MARSHAL OF WAR
+    </div>
+
+    <p>
+        The Historical Archive
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
