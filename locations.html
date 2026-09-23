@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Locations | Grand Marshal of War</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.archive-page {
+    max-width: 1200px;
+    margin: auto;
+    padding: 140px 5% 100px;
+}
+
+.page-title {
+    font-family: Cinzel, serif;
+    font-size: clamp(45px, 8vw, 80px);
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.page-description {
+    max-width: 750px;
+    color: #a7a197;
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.location-card {
+    position: relative;
+    overflow: hidden;
+    min-height: 320px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0,0,0,.95),
+            rgba(0,0,0,.2)
+        );
+
+    border: 1px solid rgba(200,164,93,.2);
+
+    transition: .35s;
+}
+
+.location-card:hover {
+    transform: translateY(-6px);
+    border-color: #c8a45d;
+}
+
+.location-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(120,35,35,.25),
+            transparent 65%
+        );
+
+    z-index: 0;
+}
+
+.location-content {
+    position: relative;
+    z-index: 2;
+}
+
+.location-type {
+    color: #c8a45d;
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.location-card h2 {
+    margin: 8px 0;
+    font-size: 28px;
+}
+
+.location-card p {
+    color: #b3ada3;
+    font-size: 13px;
+}
+
+.status {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 5px 10px;
+    border: 1px solid rgba(200,164,93,.25);
+    color: #c8a45d;
+    font-size: 8px;
+    letter-spacing: 2px;
+}
+
+.archive-note {
+    margin-top: 70px;
+    padding: 30px;
+    border-left: 2px solid #c8a45d;
+    background: #111;
+    color: #999;
+    font-size: 13px;
+}
+
+@media(max-width:800px) {
+
+    .location-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .archive-page {
+        padding-top: 120px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+
+        <span class="logo-small">
+            THE ARCHIVE OF
+        </span>
+
+        GRAND MARSHAL
+
+        <span class="logo-small">
+            OF WAR
+        </span>
+
+    </div>
+
+    <button class="menu-button" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <nav id="navMenu">
+
+        <a href="index.html">Home</a>
+        <a href="characters.html">Characters</a>
+        <a href="locations.html">World</a>
+        <a href="factions.html">Factions</a>
+        <a href="laws.html">Cosmology</a>
+        <a href="timeline.html">Timeline</a>
+
+    </nav>
+
+</header>
+
+
+<main class="archive-page">
+
+    <p class="section-label">
+        THE WORLD
+    </p>
+
+    <h1 class="page-title">
+        Locations
+    </h1>
+
+    <p class="page-description">
+
+        The known places, realms, settlements, and worlds
+        connected to the history of Grand Marshal of War.
+
+        Some locations remain poorly documented,
+        while others are tied to events that shaped existence itself.
+
+    </p>
+
+
+    <div class="location-grid">
+
+
+        <!-- CRESCENTFORD -->
+
+        <article class="location-card">
+
+            <div class="location-content">
+
+                <span class="location-type">
+                    Settlement
+                </span>
+
+                <h2>
+                    Crescentford
+                </h2>
+
+                <p>
+
+                    A settlement associated with a
+                    crescent-shaped lake.
+
+                    Crescentford forms part of the early
+                    mortal-world setting surrounding Alex.
+
+                </p>
+
+                <span class="status">
+                    CONFIRMED
+                </span>
+
+            </div>
+
+        </article>
+
+
+        <!-- EARTH -->
+
+        <article class="location-card">
+
+            <div class="location-content">
+
+                <span class="location-type">
+                    World
+                </span>
+
+                <h2>
+                    Earth
+                </h2>
+
+                <p>
+
+                    Earth exists within the wider history
+                    of Grand Marshal of War and was present
+                    during the First Apocalypse.
+
+                    It is also connected to the origin of
+                    the circumstances surrounding Alex.
+
+                </p>
+
+                <span class="status">
+                    CONFIRMED
+                </span>
+
+            </div>
+
+        </article>
+
+
+        <!-- THRAE -->
+
+        <article class="location-card">
+
+            <div class="location-content">
+
+                <span class="location-type">
+                    World / Realm
+                </span>
+
+                <h2>
+                    Thrae
+                </h2>
+
+                <p>
+
+                    Thrae is an established location within
+                    the greater history of the setting.
+
+                    Its complete geography and political
+                    structure remain to be documented.
+
+                </p>
+
+                <span class="status">
+                    CONFIRMED — DETAILS PENDING
+                </span>
+
+            </div>
+
+        </article>
+
+
+        <!-- FIRST APOCALYPSE -->
+
+        <article class="location-card">
+
+            <div class="location-content">
+
+                <span class="location-type">
+                    Historical Setting
+                </span>
+
+                <h2>
+                    Earth During the First Apocalypse
+                </h2>
+
+                <p>
+
+                    Earth during the First Apocalypse represents
+                    a critical period in the world's history.
+
+                    The event permanently forms part of the
+                    setting's ancient history.
+
+                </p>
+
+                <span class="status">
+                    HISTORICAL
+                </span>
+
+            </div>
+
+        </article>
+
+
+        <!-- UNKNOWN -->
+
+        <article class="location-card">
+
+            <div class="location-content">
+
+                <span class="location-type">
+                    Undocumented
+                </span>
+
+                <h2>
+                    Unknown Realms
+                </h2>
+
+                <p>
+
+                    Numerous locations connected to the higher
+                    planes and ancient history have not yet
+                    been fully documented.
+
+                </p>
+
+                <span class="status">
+                    UNCONFIRMED
+                </span>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+
+    <div class="archive-note">
+
+        <strong>ARCHIVE NOTE</strong><br><br>
+
+        This archive intentionally does not invent geographical
+        information that has not yet been established in the canon.
+
+        Additional kingdoms, continents, planes, cities, and realms
+        can be added as the worldbuilding develops.
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-logo">
+        GRAND MARSHAL OF WAR
+    </div>
+
+    <p>
+        The World Archive
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+  </html>
